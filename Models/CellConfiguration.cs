@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataMapperPDF2XML.Models
+﻿namespace DataMapperPDF2XML.Models
 {
-    internal class CellConfiguration
+    public class CellConfiguration
     {
+        public int Page { get; set; }
+        public string CellAddress { get; set; } // Example: "A1", "B2", etc.
+        public bool IsTitle { get; set; } // Indicates if the cell contains a title
+        public string DataType { get; set; } // Example: "Text", "Number", "Date"
+        public string? KeyCellAddress { get; set; } // Address of the key cell associated with this value cell; can be null
     }
 }

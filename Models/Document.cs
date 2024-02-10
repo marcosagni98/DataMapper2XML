@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DataMapperPDF2XML.Models
 {
-    internal class Document
+    public class Document
     {
+        public string Name { get; set; }
+        public string FilePath { get; set; }
+        public List<CellConfiguration> ConfiguredCells { get; set; } = new List<CellConfiguration>();
     }
 }
